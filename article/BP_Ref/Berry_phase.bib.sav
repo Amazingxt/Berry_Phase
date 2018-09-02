@@ -1,0 +1,271 @@
+% Encoding: UTF-8
+
+@Article{Berger2015,
+  author    = {Berger, Stefan and Pechal, Marek and Kurpiers, Philipp and Abdumalikov, Abdufarrukh A and Eichler, Christopher and Mlynek, Jonas A and Shnirman, A and Gefen, Yuval and Wallraff, Andreas and Filipp, Stefan},
+  title     = {Measurement of geometric dephasing using a superconducting qubit},
+  journal   = {Nature communications},
+  year      = {2015},
+  volume    = {6},
+  pages     = {8757},
+  publisher = {Nature Publishing Group},
+}
+
+@Article{Leek2007,
+  author    = {Leek, PJ and Fink, JM and Blais, A and Bianchetti, R and G{\"o}ppl, M and Gambetta, JM and Schuster, DI and Frunzio, L and Schoelkopf, RJ and Wallraff, A},
+  title     = {Observation of Berry's phase in a solid-state qubit},
+  journal   = {science},
+  year      = {2007},
+  volume    = {318},
+  number    = {5858},
+  pages     = {1889--1892},
+  publisher = {American Association for the Advancement of Science},
+}
+
+@Article{Berry1984,
+  author    = {Berry, Michael Victor},
+  title     = {Quantal phase factors accompanying adiabatic changes},
+  journal   = {Proc. R. Soc. Lond. A},
+  year      = {1984},
+  volume    = {392},
+  number    = {1802},
+  pages     = {45--57},
+  publisher = {The Royal Society},
+}
+
+@Article{Qin2017,
+  author    = {Qin, Xiao-Ke and Guo, Guang-Can and Zhou, Zheng-Wei},
+  title     = {Suppressing the geometric dephasing of Berry phase by using modified dynamical decoupling sequences},
+  journal   = {New Journal of Physics},
+  year      = {2017},
+  volume    = {19},
+  number    = {1},
+  pages     = {013025},
+  publisher = {IOP Publishing},
+}
+
+@Article{Arai2018,
+  author  = {Arai, Keigo and Lee, Junghyun and Belthangady, Chinmay and Glenn, David R and Zhang, Huiliang and Walsworth, Ronald L},
+  title   = {Geometric phase magnetometry using a solid-state spin},
+  journal = {arXiv preprint arXiv:1803.07176},
+  year    = {2018},
+}
+
+@Article{Cai2018,
+  author    = {Cai, Huabing and Ren, Zhongzhou},
+  title     = {Geometric phase for a static two-level atom in cosmic string spacetime},
+  journal   = {Classical and Quantum Gravity},
+  year      = {2018},
+  volume    = {35},
+  number    = {10},
+  pages     = {105014},
+  publisher = {IOP Publishing},
+}
+
+@Article{Aharonov1987,
+  author    = {Aharonov, Yakir and Anandan, J},
+  title     = {Phase change during a cyclic quantum evolution},
+  journal   = {Physical Review Letters},
+  year      = {1987},
+  volume    = {58},
+  number    = {16},
+  pages     = {1593},
+  publisher = {APS},
+}
+
+@Article{Tong2004,
+  author    = {Tong, DM and Sj{\"o}qvist, Erik and Kwek, Leong Chuan and Oh, Choo Hiap},
+  title     = {Kinematic approach to the mixed state geometric phase in nonunitary evolution},
+  journal   = {Physical review letters},
+  year      = {2004},
+  volume    = {93},
+  number    = {8},
+  pages     = {080405},
+  publisher = {APS},
+}
+
+@Article{Carollo2003,
+  author    = {Carollo, ANGELO and Fuentes-Guridi, I and Santos, M Franca and Vedral, Vlatko},
+  title     = {Geometric phase in open systems},
+  journal   = {Physical review letters},
+  year      = {2003},
+  volume    = {90},
+  number    = {16},
+  pages     = {160402},
+  publisher = {APS},
+}
+
+@Article{Jones2000,
+  author    = {Jones, Jonathan A and Vedral, Vlatko and Ekert, Artur and Castagnoli, Giuseppe},
+  title     = {Geometric quantum computation using nuclear magnetic resonance},
+  journal   = {Nature},
+  year      = {2000},
+  volume    = {403},
+  number    = {6772},
+  pages     = {869},
+  publisher = {Nature Publishing Group},
+}
+
+@Article{Zhang2005,
+  author    = {Zhang, Yuanbo and Tan, Yan-Wen and Stormer, Horst L and Kim, Philip},
+  title     = {Experimental observation of the quantum Hall effect and Berry's phase in graphene},
+  journal   = {nature},
+  year      = {2005},
+  volume    = {438},
+  number    = {7065},
+  pages     = {201},
+  publisher = {Nature Publishing Group},
+}
+
+@Article{Richardson1988,
+  author    = {Richardson, DJ and Kilvington, AI and Green, K and Lamoreaux, SK},
+  title     = {Demonstration of Berry's phase using stored ultracold neutrons},
+  journal   = {Physical review letters},
+  year      = {1988},
+  volume    = {61},
+  number    = {18},
+  pages     = {2030},
+  publisher = {APS},
+}
+
+@Article{Filipp2009,
+  author    = {Filipp, S and Klepp, J and Hasegawa, Y and Plonka-Spehr, C and Schmidt, U and Geltenbort, P and Rauch, H},
+  title     = {Experimental demonstration of the stability of Berry’s phase for a spin-1/2 particle},
+  journal   = {Physical review letters},
+  year      = {2009},
+  volume    = {102},
+  number    = {3},
+  pages     = {030404},
+  publisher = {APS},
+}
+
+@Article{Moettoenen2008,
+  author    = {M{\"o}tt{\"o}nen, Mikko and Vartiainen, Juha J and Pekola, Jukka P},
+  title     = {Experimental determination of the Berry phase in a superconducting charge pump},
+  journal   = {Physical review letters},
+  year      = {2008},
+  volume    = {100},
+  number    = {17},
+  pages     = {177201},
+  publisher = {APS},
+}
+
+@Article{Duan2001,
+  author    = {Duan, L-M and Cirac, Juan I and Zoller, Peter},
+  title     = {Geometric manipulation of trapped ions for quantum computation},
+  journal   = {Science},
+  year      = {2001},
+  volume    = {292},
+  number    = {5522},
+  pages     = {1695--1697},
+  publisher = {American Association for the Advancement of Science},
+}
+
+@Article{Zheng2006,
+  author    = {Zheng, Shi-Biao},
+  title     = {High-speed geometric quantum phase gates for trapped ions in thermal motion},
+  journal   = {Physical Review A},
+  year      = {2006},
+  volume    = {74},
+  number    = {3},
+  pages     = {032322},
+  publisher = {APS},
+}
+
+@Article{Lemmer2013,
+  author    = {Lemmer, A and Bermudez, A and Plenio, MB},
+  title     = {Driven geometric phase gates with trapped ions},
+  journal   = {New Journal of Physics},
+  year      = {2013},
+  volume    = {15},
+  number    = {8},
+  pages     = {083001},
+  publisher = {IOP Publishing},
+}
+
+@Article{Kim2008,
+  author    = {Kim, K and Roos, CF and Aolita, L and H{\"a}ffner, H and Nebendahl, V and Blatt, R},
+  title     = {Geometric phase gate on an optical transition for ion trap quantum computation},
+  journal   = {Physical Review A},
+  year      = {2008},
+  volume    = {77},
+  number    = {5},
+  pages     = {050303},
+  publisher = {APS},
+}
+
+@Article{Leibfried2003,
+  author    = {Leibfried, Dietrich and DeMarco, Brian and Meyer, Volker and Lucas, David and Barrett, Murray and Britton, Joe and Itano, Wayne M and Jelenkovi{\'c}, B and Langer, Chris and Rosenband, Till and others},
+  title     = {Experimental demonstration of a robust, high-fidelity geometric two ion-qubit phase gate},
+  journal   = {Nature},
+  year      = {2003},
+  volume    = {422},
+  number    = {6930},
+  pages     = {412},
+  publisher = {Nature Publishing Group},
+}
+
+@Book{Schlosshauer2007,
+  title     = {Decoherence: and the quantum-to-classical transition},
+  publisher = {Springer Science \& Business Media},
+  year      = {2007},
+  author    = {Schlosshauer, Maximilian A},
+}
+
+@Article{Whitney2005,
+  author    = {Whitney, Robert S and Makhlin, Yuriy and Shnirman, Alexander and Gefen, Yuval},
+  title     = {Geometric nature of the environment-induced Berry phase and geometric dephasing},
+  journal   = {Physical review letters},
+  year      = {2005},
+  volume    = {94},
+  number    = {7},
+  pages     = {070407},
+  publisher = {APS},
+}
+
+@Article{DeChiara2003,
+  author    = {De Chiara, Gabriele and Palma, G Massimo},
+  title     = {Berry phase for a spin 1/2 particle in a classical fluctuating field},
+  journal   = {Physical review letters},
+  year      = {2003},
+  volume    = {91},
+  number    = {9},
+  pages     = {090404},
+  publisher = {APS},
+}
+
+@Article{Berger2013,
+  author    = {Berger, S and Pechal, M and Abdumalikov Jr, AA and Eichler, C and Steffen, L and Fedorov, A and Wallraff, A and Filipp, S},
+  title     = {Exploring the effect of noise on the Berry phase},
+  journal   = {Physical Review A},
+  year      = {2013},
+  volume    = {87},
+  number    = {6},
+  pages     = {060303},
+  publisher = {APS},
+}
+
+@Article{Gillespie1996,
+  author        = {Gillespie, Daniel T},
+  title         = {Exact numerical simulation of the Ornstein-Uhlenbeck process and its integral},
+  journal       = {Physical review E},
+  year          = {1996},
+  volume        = {54},
+  number        = {2},
+  pages         = {2084},
+  __markedentry = {[Amazing:]},
+  publisher     = {APS},
+}
+
+@Article{Bylander2011,
+  author        = {Bylander, Jonas and Gustavsson, Simon and Yan, Fei and Yoshihara, Fumiki and Harrabi, Khalil and Fitch, George and Cory, David G and Nakamura, Yasunobu and Tsai, Jaw-Shen and Oliver, William D},
+  title         = {Noise spectroscopy through dynamical decoupling with a superconducting flux qubit},
+  journal       = {Nature Physics},
+  year          = {2011},
+  volume        = {7},
+  number        = {7},
+  pages         = {565},
+  __markedentry = {[Amazing:6]},
+  publisher     = {Nature Publishing Group},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

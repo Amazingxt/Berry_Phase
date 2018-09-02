@@ -1,0 +1,49 @@
+% Encoding: UTF-8
+
+@Article{Berger2015,
+  author        = {Berger, Stefan and Pechal, Marek and Kurpiers, Philipp and Abdumalikov, Abdufarrukh A and Eichler, Christopher and Mlynek, Jonas A and Shnirman, A and Gefen, Yuval and Wallraff, Andreas and Filipp, Stefan},
+  title         = {Measurement of geometric dephasing using a superconducting qubit},
+  journal       = {Nature communications},
+  year          = {2015},
+  volume        = {6},
+  pages         = {8757},
+  __markedentry = {[Amazing:6]},
+  publisher     = {Nature Publishing Group},
+}
+
+@Article{Leek2007,
+  author        = {Leek, PJ and Fink, JM and Blais, A and Bianchetti, R and G{\"o}ppl, M and Gambetta, JM and Schuster, DI and Frunzio, L and Schoelkopf, RJ and Wallraff, A},
+  title         = {Observation of Berry's phase in a solid-state qubit},
+  journal       = {science},
+  year          = {2007},
+  volume        = {318},
+  number        = {5858},
+  pages         = {1889--1892},
+  __markedentry = {[Amazing:6]},
+  publisher     = {American Association for the Advancement of Science},
+}
+
+@Article{Berry1984,
+  author        = {Berry, Michael Victor},
+  title         = {Quantal phase factors accompanying adiabatic changes},
+  journal       = {Proc. R. Soc. Lond. A},
+  year          = {1984},
+  volume        = {392},
+  number        = {1802},
+  pages         = {45--57},
+  __markedentry = {[Amazing:6]},
+  publisher     = {The Royal Society},
+}
+
+@Article{Qin2017,
+  author    = {Qin, Xiao-Ke and Guo, Guang-Can and Zhou, Zheng-Wei},
+  title     = {Suppressing the geometric dephasing of Berry phase by using modified dynamical decoupling sequences},
+  journal   = {New Journal of Physics},
+  year      = {2017},
+  volume    = {19},
+  number    = {1},
+  pages     = {013025},
+  publisher = {IOP Publishing},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

@@ -1,0 +1,1220 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass revtex4-1
+\options reprint, aps
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry false
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type numerical
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Preprint
+2018-08-17 version 1.0 by amz
+\end_layout
+
+\begin_layout Title
+Experimentally supress residual geometric dephasing use a single trapped
+ ion
+\end_layout
+
+\begin_layout Abstract
+Geometric phase also known as Berry phase, is regarded as a pential in fault
+ tolerance quantum information processing(QIP) due to it's geometric nature.
+ Traditional dynamic decoupling sequence can eliminate dynamic dephasing
+ while residual geometric dephasing is still import for high-precision quantum
+ manipulation bathed in environmental noise .
+ Following the schemes in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2017suppressing"
+
+\end_inset
+
+, we experimentally demonstrate using a single trapped 
+\begin_inset Formula $^{171}Yb^{+}$
+\end_inset
+
+ ion that these modified dynamic decouping sequences supress residual geometric
+ dephasing effectively.
+ Besides, we also investigate the parameters of the low-frequence noise
+ and confirm the domain of validity of these methods.
+ 
+\end_layout
+
+\begin_layout Standard
+The geometric phase also known as Berry Phase
+\begin_inset CommandInset citation
+LatexCommand citep
+key "berry1984quantal"
+
+\end_inset
+
+ associated with adiabatic and circular evalution in Hilbert parameter space
+ plays a fundamental role in a broad range of physics application, including
+ but not limited to precision measurement
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arai2018geometric,cai2018geometric"
+
+\end_inset
+
+, Aharonnv-Anandan phase
+\begin_inset CommandInset citation
+LatexCommand citep
+key "aharonov1987phase"
+
+\end_inset
+
+, mixed state
+\begin_inset CommandInset citation
+LatexCommand citep
+key "tong2004kinematic"
+
+\end_inset
+
+ and non-unitary evolution
+\begin_inset CommandInset citation
+LatexCommand citep
+key "carollo2003geometric"
+
+\end_inset
+
+.
+ Especially in quantum information processing(QIP) domain, Berry Phase is
+ deemed as a promising way to realize precise quantum control due to it's
+ nature of immune to specific environmental noise.
+ A numbers of experimental platforms have been investment in Berry Phase
+ such as NMR
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2000geometric"
+
+\end_inset
+
+, superconducting circuit
+\begin_inset CommandInset citation
+LatexCommand citep
+key "leek2007observation,mottonen2008experimental"
+
+\end_inset
+
+, graphene
+\begin_inset CommandInset citation
+LatexCommand citep
+key "zhang2005experimental"
+
+\end_inset
+
+, and ultracold atoms
+\begin_inset CommandInset citation
+LatexCommand citep
+key "filipp2009experimental,richardson1988demonstration"
+
+\end_inset
+
+ in recent few years.
+ Ion trap-based quantum information architectures are a promising solid-state
+ platform for quantum information processing due to there high fidelity
+ and long trapped time.
+ Theoretical proposals
+\begin_inset CommandInset citation
+LatexCommand citep
+key "duan2001geometric,kim2008geometric,lemmer2013driven,zheng2006high"
+
+\end_inset
+
+ and experiments
+\begin_inset CommandInset citation
+LatexCommand citep
+key "leibfried2003experimental"
+
+\end_inset
+
+ about geometric phase gate have been investigated using trapped ions.
+\end_layout
+
+\begin_layout Standard
+Dephasing arises in quantum systum when the interaction between system and
+ environment causes randomizaiton of its quantum phase in a process
+\begin_inset CommandInset citation
+LatexCommand citep
+key "arai2018geometric"
+
+\end_inset
+
+.
+ Part of this dephasing is dynamic dephasing while part of this is of geometric
+ origin.
+ Although dynamic dephasing can be supressed throuth spin echo methods
+\begin_inset CommandInset citation
+LatexCommand citep
+key "jones2000geometric"
+
+\end_inset
+
+ and geometric dephasing is much less than dynamic one
+\begin_inset CommandInset citation
+LatexCommand citep
+key "de2003berry"
+
+\end_inset
+
+.
+ Residual geometric dephasing is still important to precise control and
+ high fidelity gate manipulation.
+ Recently, more and more work have investigated the geometric contribution
+ to dephasing
+\begin_inset CommandInset citation
+LatexCommand citep
+key "whitney2005geometric,berger2013exploring,berger2015measurement"
+
+\end_inset
+
+.
+ New schemes was proposed to supress the residual geometric dephasing in
+ Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2017suppressing"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In this Letter, we investigate the geometric dephasing under classical Ornstein-
+Uhlenbeck(OU)
+\begin_inset CommandInset citation
+LatexCommand citep
+key "gillespie1996exact"
+
+\end_inset
+
+ fluctuating field using a quantum two-level system(TLS) in a ultracold
+ ion.
+ Utilizing modified dynamical decoupling schemes such as SE and CPMG
+\begin_inset CommandInset citation
+LatexCommand citep
+key "bylander2011noise"
+
+\end_inset
+
+, we suppress the residual geometric dephasing to some extent.
+ Furthermore, by alter the parameter of noise, we demonstrate the scope
+ of application of our schemes in real experiment.
+\end_layout
+
+\begin_layout Standard
+Consider a TLS exposed to a slowly varying magnetic field, the Hamiltonian
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{1}=\frac{1}{2}(\Delta\sigma_{z}+\Omega sin(\varphi)\sigma_{x}+\Omega cos(\varphi)\sigma_{y})=\frac{1}{2}\textbf{\textbf{B}}\cdot\bm{\sigma}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+after setting 
+\begin_inset Formula $\hbar=1$
+\end_inset
+
+.
+ Where 
+\begin_inset Formula $\Delta=\omega_{0}-\omega_{mw}$
+\end_inset
+
+ is the detuning between drive(
+\begin_inset Formula $\omega_{mw}$
+\end_inset
+
+) and TLS transition(
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+), 
+\begin_inset Formula $\bm{\sigma}=(\sigma_{x},\sigma_{y},\sigma_{z})$
+\end_inset
+
+ is the Pauli matrices, 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ and 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ are the intensity and phase of drive respectively.
+ 
+\begin_inset Formula $\textbf{B}=(sin(\varphi),cos(\varphi),\Delta)$
+\end_inset
+
+ can be regarded as the magnetic field applied to TLS.
+ We let the 
+\begin_inset Formula $\textbf{B}$
+\end_inset
+
+ forms a angle 
+\begin_inset Formula $\theta=arctan(\frac{\Omega}{\Delta})$
+\end_inset
+
+ with the 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ axis.
+ By changing the phase of drive, the magnetic precess around this axis with
+ palstance 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ as shown in Fig.
+ 1(a).
+ If the 
+\begin_inset Formula $\dot{\varphi}$
+\end_inset
+
+ is small enough, usually satisfy the requirement that the adiabaticity
+ parameter 
+\begin_inset Formula $A=\dot{\varphi}sin\theta/2B\ll1$
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand citep
+key "leek2007observation"
+
+\end_inset
+
+ for the case of constant angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+, dynamical phase and geometric phase will be accumulated in the duration
+ of this process.
+ In order to observe the pure Berry phase, ones usually take advantage of
+ the spin echo(SE) technique to eliminate the part of dynamic phase as shown
+ in Fig.
+ 1(b).
+ Supposeing in an spin echo sequence, the magnetic field rounds 
+\begin_inset Formula $n$
+\end_inset
+
+ loops in half of the sequence and enclosed a solid angle 
+\begin_inset Formula $\Theta=2n\pi(1-cos(\theta))$
+\end_inset
+
+, which equals to the geometric phase acquire by eigenstate of Hamiltonian
+ 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+.
+ So the observable phase difference 
+\begin_inset Formula $\delta=4\pi cos(\theta)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure/sphere.pdf
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Berry phase in qubit "
+
+\end_inset
+
+ (color online).
+ Trace of Hamiltonian in qubit.
+ (a) Hamiltonian rotate on 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ adiabaticly with angle 
+\begin_inset Formula $\theta=arctan(\frac{\Omega}{\Delta})$
+\end_inset
+
+ from 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ axis.
+ Eigenstates of this Hamiltonian accumulate dynamic phase and geometric
+ phase in this process.
+ (b) Spin echo strategy in which Hamiltonian rotate in the opposite direction
+ after a 
+\begin_inset Formula $\pi$
+\end_inset
+
+ pulse, resulting in elimination of dynamic phase and acquiring pure geometric
+ phase.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now let's conside the Hamiltonian under classical fluctuating field.
+ We follow the assumption 
+\begin_inset Formula $\textbf{K}(t)=(0,0,K_{3})$
+\end_inset
+
+, for the reason that decoherence is meanly from destabilization of magnetic,
+ in other words, noise in detuning 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ in trapped ions platform, which resulting in the Hamiltonian
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+H_{2}=\frac{1}{2}((\Delta+K_{3})\sigma_{z}+\Omega sin(\varphi)\sigma_{x}+\Omega cos(\varphi)\sigma_{y})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ noise conform an OU process with correlation time 
+\begin_inset Formula $\tau$
+\end_inset
+
+ and intensity 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ the coherence function 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+W=\langle e^{i\phi}\rangle=e^{-\langle\phi^{2}\rangle}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+, in which 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=-\sum_{k=1}^{n}\int_{T_{k-1}}^{T_{k}}s_{k}(cos\theta-\dot{\varphi}sin^{2}\theta/B)K_{3}(t)dt
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $(T_{k-1},T_{k})$
+\end_inset
+
+ is the time segment cut apart by the spin echo sequence, 
+\begin_inset Formula $s_{k}$
+\end_inset
+
+ is eigenvalue in the 
+\begin_inset Formula $k$
+\end_inset
+
+th time interval.
+ 
+\begin_inset Formula $W$
+\end_inset
+
+ will less than one, which means dephasing due to existence of the noise
+ if 
+\begin_inset Formula $\phi$
+\end_inset
+
+ does not equal to zero.
+ The term 
+\begin_inset Formula $s_{k}cos\theta$
+\end_inset
+
+ give raise to the dynamic dephasing while the second term 
+\begin_inset Formula $-s_{k}\dot{\varphi}sin^{2}\theta/B$
+\end_inset
+
+ induces the geometric dephasing.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure/Fig-2.pdf
+	scale 40
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Trajectory of Bloch vector in schemes"
+
+\end_inset
+
+ (color online).
+ Trajectory of Hamiltonian in modified dynamic decoupling sequences.
+ The start point and end point of the trajectory of segment are represented
+ by the carmine dots.
+ 
+\begin_inset Formula $\pi$
+\end_inset
+
+ pulse is represented by the laurel-green post.
+ Scheme one are shown in (a) modified spin echo strategy and (b) modified
+ CPMG strategy.
+ Scheme two is shown in (c).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In order to eliminate both dynamic and geometric dephasing, the sum of integrati
+on in equation 
+\begin_inset Formula $(4)$
+\end_inset
+
+, which indicate the evolution part of dynamic decoupling sequence, must
+ be zero.
+ As demonstrated in [], there are two schemes to solve this problem.
+ Expatiated as bellow:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textbf{One:}$
+\end_inset
+
+ Vary the angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ in neighboring adiabatic paths as shown in Fig.
+ 2(a)(spin echo sequence) and Fig.
+ 2(b)(CPMG sequence).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\phi=(cos\theta_{a}-\frac{\dot{\varphi}_{+}sin^{2}\theta_{a}}{B})+(-cos\theta_{c}+\frac{\dot{\varphi}_{-}sin^{2}\theta_{c}}{B})=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\textbf{\textbf{Two}:}$
+\end_inset
+
+ Separate two adiabatic paths of spin echo sequence into four parts as shown
+ in Fig.
+ 2(c).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi=(cos\theta-\frac{\dot{\varphi}_{+}sin^{2}\theta}{B})+(-cos\theta-\frac{\dot{\varphi}_{-}sin^{2}\theta}{B})+
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+(-cos\theta+\frac{\dot{\varphi}_{+}sin^{2}\theta}{B})+(cos\theta+\frac{\dot{\varphi}_{-}sin^{2}\theta}{B})=0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+in which 
+\begin_inset Formula $\dot{\varphi}_{+}$
+\end_inset
+
+indicate the procession orientation of magnetic is clockwise while 
+\begin_inset Formula $\dot{\varphi}_{-}$
+\end_inset
+
+ represent anticlockwise and 
+\begin_inset Formula $\dot{\varphi}_{+}=-\dot{\varphi}_{-}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+We test these two schemes using a trapped 
+\begin_inset Formula $^{171}Yb^{+}$
+\end_inset
+
+ ion in needle trap with the setup similar to the one described in Ref.
+ [].
+ The TLS is structured by two hyperfine leves of the 
+\begin_inset Formula $^{171}Yb^{+}$
+\end_inset
+
+ ion in the 
+\begin_inset Formula $S_{1/2}$
+\end_inset
+
+ ground-state, with 
+\begin_inset Formula $|0\rangle=|F=0\rangle$
+\end_inset
+
+ and 
+\begin_inset Formula $|1\rangle=|F=1,m_{F}=0\rangle$
+\end_inset
+
+, as shwon in Fig.
+ 3.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure/setup.pdf
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Energy level diagram of Yb ion "
+
+\end_inset
+
+ (color online).
+ Energy level diagram of Yb ion.
+ Qubit state 
+\begin_inset Formula $|0\rangle$
+\end_inset
+
+,
+\begin_inset Formula $|1\rangle$
+\end_inset
+
+ are mapped onto 
+\begin_inset Formula $|F=1,m_{F}=0\rangle$
+\end_inset
+
+,
+\begin_inset Formula $|F=0,m_{F}=0\rangle$
+\end_inset
+
+in the 
+\begin_inset Formula $S_{1/2}$
+\end_inset
+
+ ground state manifold, respectively.
+ The transition frequency between 
+\begin_inset Formula $|0\rangle$
+\end_inset
+
+ and 
+\begin_inset Formula $|1\rangle$
+\end_inset
+
+ is 
+\begin_inset Formula $(2\pi)12.642824GHz$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In our experiment, Berry phase and coherence of the qubit have been measurement
+ as function of angle span by the magnetic field 
+\begin_inset Formula $\textbf{B}$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ axis.
+ Using a spin echo pulse sequence, in which dynamic phase will be offset
+ by opposite loop direction of neighboring adiabatic evalution, we can measure
+ pure Berry's phase.
+ The experiment takes the following process: after 1ms doppler cooling,
+ the state of the ion is initialized to 
+\begin_inset Formula $|0\rangle$
+\end_inset
+
+ by 20
+\begin_inset Formula $\mu s$
+\end_inset
+
+ standard optical pumping.
+ Then a series of coherent manipulations will be bring to the ion using
+ a bunch microwave 
+\begin_inset Formula $\omega_{mw}$
+\end_inset
+
+.
+ In order to observe different Berry Phase with different angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+,we vary 
+\begin_inset Formula $\omega_{mw}$
+\end_inset
+
+ around qubit transtion frequency 
+\begin_inset Formula $\omega_{0}=12.64GHz$
+\end_inset
+
+ will cause different 
+\begin_inset Formula $\theta=arctan\frac{\Omega}{\Delta}$
+\end_inset
+
+.
+ The 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ time for Rabi oscillation is adjusted to 
+\begin_inset Formula $95\mu s$
+\end_inset
+
+, that is, the Rabi frequency 
+\begin_inset Formula $\Omega=10.5kHz$
+\end_inset
+
+.
+ The complete sequence start by preparing the 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ superposition state with a 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+ resonant microwave.
+ Then the magnetic field traces around 
+\begin_inset Formula $\sigma_{z}$
+\end_inset
+
+ axis adiabaticly by varying 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, the phase of mircowave slowly, causing one of the eigenstate 
+\begin_inset Formula $|+\rangle$
+\end_inset
+
+ of 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ acquire a phase 
+\begin_inset Formula $\gamma_{+}=\gamma_{d}+\gamma_{g}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\gamma_{d}$
+\end_inset
+
+ and 
+\begin_inset Formula $\gamma_{g}$
+\end_inset
+
+ are dynamic and geometric phase respectively.
+ we make 
+\begin_inset Formula $\dot{\varphi}/B==0.1$
+\end_inset
+
+, which guarantee the adiabatic parameter 
+\begin_inset Formula $A=0.05sin\theta\ll1$
+\end_inset
+
+.
+ A resonant 
+\begin_inset Formula $\pi$
+\end_inset
+
+ pulse then swap the eigenstate of Hamiltonian in 
+\begin_inset Formula $(1)$
+\end_inset
+
+, after which the magnetic tracing along opposite direction causing the
+ same eigenstate of 
+\begin_inset Formula $H_{1}$
+\end_inset
+
+ acquire 
+\begin_inset Formula $\gamma_{+}=-\gamma_{d}+\gamma_{g}$
+\end_inset
+
+.
+ Finally the pure geometric phase difference between engenstates is 
+\begin_inset Formula $\delta=\gamma_{+}-\gamma_{-}=-4\pi cos\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure/Fig4.pdf
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Coherence of the qubit"
+
+\end_inset
+
+ (color online).
+ Measured coherences as a function of angle with fluctuations in the effective
+ magnetic field.
+ Each data point is average of 100 realizations of noise.
+ Solid lines indicate fits to the simulation data.
+ (a) Coherence measured in spin echo and CPMG protocols with noise during
+ the whole process.
+ (b) Coherence measurement in modified dynamic decoupling protocols.
+ The error bars indicate the standard deviation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We generate 
+\begin_inset Formula $K_{3}$
+\end_inset
+
+ noise by means of add epactal stochastic components in detuning term 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ in drive.
+ The noise applied to qubit conform an Ornstein-Uhlenbeck(OU) process with
+ correlation time 
+\begin_inset Formula $1/\Gamma=10$
+\end_inset
+
+ and intensity 
+\begin_inset Formula $\alpha/\Omega^{2}\approx1$
+\end_inset
+
+.
+ We get two parameters 
+\begin_inset Formula $\delta$
+\end_inset
+
+ and 
+\begin_inset Formula $W$
+\end_inset
+
+ by state tomography.
+ That is to say, 
+\begin_inset Formula $\delta=arg\langle\rho_{-1,1}(T)\rangle$
+\end_inset
+
+and 
+\begin_inset Formula $W=|\langle\rho_{-1,1}(T)\rangle|/|\rho_{-1,1}(0)|$
+\end_inset
+
+.
+ In Fig.
+ 4(a), we measure the dephasing of spin echo and CPMG sequence in the case
+ of low-frequence noise 
+\begin_inset Formula $\Gamma T\ll1$
+\end_inset
+
+.
+ Besides, we also investigate the dephasing of free induction decay(FID)
+ .
+ Obviously, SE and CPMG methords only suppress the dephasing effectively
+ in much smaller angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+ compared to FID.
+ When it comes to bigger angle, such as 
+\begin_inset Formula $\theta>\frac{\pi}{4}$
+\end_inset
+
+, these two methords don't take effect.
+ It can be understanded easily because the ratio 
+\begin_inset Formula $K_{3}/\Delta$
+\end_inset
+
+ is more bigger in large angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ In order to suppress the residual geometric dephasing, we modify the SE
+ and CPMG sequence according to methords exhibited in Fig.
+ 2.
+ The result is shown in Fig.
+ 4(b), in which meliorative dynamic decounpling sequence supress residual
+ dephasing successfully even in large angle 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ Meanwhile, Berry phase acquired by all these schemes agree well with theoretica
+l expectation in Fig.
+ 5(a) and 5(b).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure/Fig-5.pdf
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Berry phase "
+
+\end_inset
+
+ (color online).
+ Berry phase as a function of angle.
+ Each data point is average of 100 realization of noise.
+ Solid line is the theoretical Berry phase difference 
+\begin_inset Formula $-4\pi cos\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $-2\pi cos\theta_{\alpha}-2\pi cos\theta_{\beta}$
+\end_inset
+
+.
+ (a) Spin echo and CPMG protocols.
+ (b) Modified dynamic decoupling protocols.
+ The error bars indicate the standard deviation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In the motivation of realistic application in quantum information processing(QIP
+), we investigate the performance of these modified methords under different
+ parameters 
+\begin_inset Formula $1/\Gamma$
+\end_inset
+
+ and 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ of Gaussian noise.
+ First, we vary 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ from 
+\begin_inset Formula $10^{-1}$
+\end_inset
+
+- 
+\begin_inset Formula $10^{4}$
+\end_inset
+
+ at the same time we fix parameter 
+\begin_inset Formula $\alpha/\Omega\approx1$
+\end_inset
+
+.
+ As shown in Fig.
+ 4(c), these methords become out of work along with increasing correlation
+ time 
+\begin_inset Formula $1/\Gamma$
+\end_inset
+
+ of the noise.
+ Especially, when 
+\begin_inset Formula $\Gamma>100$
+\end_inset
+
+, dephasing begins to be notable.
+ Second, we set 
+\begin_inset Formula $1/\Gamma=0.01$
+\end_inset
+
+ and change 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ making the ratio 
+\begin_inset Formula $\frac{\alpha}{\Omega}$
+\end_inset
+
+ from 
+\begin_inset Formula $1$
+\end_inset
+
+ to 
+\begin_inset Formula $100$
+\end_inset
+
+.
+ In Fig.
+ 4(d), the more the ratio 
+\begin_inset Formula $\frac{\alpha}{\Omega}$
+\end_inset
+
+ is, the worse the effect of these methords will be.
+ As a result, we can only suppress the dephasing of qubit bathed in Gaussian
+ noise with the ameliorative dynamic decoupling sequence if the parameters
+ 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ or ratio 
+\begin_inset Formula $\frac{\alpha}{\Omega}$
+\end_inset
+
+ are not too large.
+\end_layout
+
+\begin_layout Standard
+In summery, we investigate the dephasing of a TLS under Gaussian noise using
+ a single trapped ion, suppress the residual geometric dephasing utilizing
+ modified dynamic decoupling sequence without destroying Berry phase.
+ The measurement results are in agreement with theoretical simulations.
+ In addition, we also discuss effect of these sequence in different parameters
+ of noise and make sure, it will reduce interference between quantum systems
+ and environment further.
+ Meanwhile it will help precise quantum state manipulation in realistic
+ experiments of QIP.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "BP_Ref/Ref"
+options "plainnat"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
