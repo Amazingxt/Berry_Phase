@@ -77,13 +77,14 @@
 \end_layout
 
 \begin_layout Title
-Experimentally supress residual geometric dephasing use a single trapped
+Experimentally suppress residual geometric dephasing use a single trapped
  ion
 \end_layout
 
 \begin_layout Abstract
-Geometric phase also known as Berry phase, is regarded as a pential in fault
- tolerance quantum information processing(QIP) due to it's geometric nature.
+Geometric phase also known as Berry phase, is regarded as a pential strategy
+ in fault tolerance quantum information processing(QIP) due to it's geometric
+ nature.
  Traditional dynamic decoupling sequence can eliminate dynamic dephasing
  while residual geometric dephasing is still import for high-precision quantum
  manipulation bathed in environmental noise .
@@ -99,10 +100,11 @@ key "qin2017suppressing"
 \begin_inset Formula $^{171}Yb^{+}$
 \end_inset
 
- ion that these modified dynamic decouping sequences supress residual geometric
+ ion that these modified dynamic decouping sequences suppress residual geometric
  dephasing effectively.
- Besides, we also investigate the parameters of the low-frequence noise
- and confirm the domain of validity of these methods.
+ Besides, we also investigate the impact of intensity and correlation time
+ of the low-frequence noise on coherence.
+ And we confirm the domain of validity of these methods.
  
 \end_layout
 
@@ -148,8 +150,8 @@ key "carollo2003geometric"
  Especially in quantum information processing(QIP) domain, Berry Phase is
  deemed as a promising way to realize precise quantum control due to it's
  nature of immune to specific environmental noise.
- A numbers of experimental platforms have been investment in Berry Phase
- such as NMR
+ A numbers of experimental platforms have been put in Berry Phase such as
+ NMR
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2000geometric"
@@ -178,9 +180,8 @@ key "filipp2009experimental,richardson1988demonstration"
 \end_inset
 
  in recent few years.
- Ion trap-based quantum information architectures are a promising solid-state
- platform for quantum information processing due to there high fidelity
- and long trapped time.
+ Ion trap-based architectures are a promising solid-state platform for quantum
+ information processing due to its high fidelity and long trapped time.
  Theoretical proposals
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -225,7 +226,7 @@ key "de2003berry"
 \end_inset
 
 .
- Residual geometric dephasing is still important to precise control and
+ Residual geometric dephasing is still important for precise control and
  high fidelity gate manipulation.
  Recently, more and more work have investigated the geometric contribution
  to dephasing
@@ -236,7 +237,7 @@ key "whitney2005geometric,berger2013exploring,berger2015measurement"
 \end_inset
 
 .
- New schemes was proposed to supress the residual geometric dephasing in
+ New schemes was proposed to suppress the residual geometric dephasing in
  Ref.
  
 \begin_inset CommandInset citation
@@ -266,14 +267,18 @@ key "bylander2011noise"
 
 \end_inset
 
-, we suppress the residual geometric dephasing to some extent.
- Furthermore, by alter the parameter of noise, we demonstrate the scope
- of application of our schemes in real experiment.
+, we suppress the residual geometric dephasing effectively.
+ Furthermore, by altering the intensity and correlation time of noise, we
+ demonstrate the scope of application of our schemes in real experiment.
 \end_layout
 
 \begin_layout Standard
 Consider a TLS exposed to a slowly varying magnetic field, the Hamiltonian
- 
+ (setting 
+\begin_inset Formula $\hbar=1$
+\end_inset
+
+.)
 \end_layout
 
 \begin_layout Standard
@@ -288,12 +293,7 @@ H_{1}=\frac{1}{2}(\Delta\sigma_{z}+\Omega sin(\varphi)\sigma_{x}+\Omega cos(\var
 \end_layout
 
 \begin_layout Standard
-after setting 
-\begin_inset Formula $\hbar=1$
-\end_inset
-
-.
- Where 
+Where 
 \begin_inset Formula $\Delta=\omega_{0}-\omega_{mw}$
 \end_inset
 
@@ -327,7 +327,7 @@ after setting
 \begin_inset Formula $\textbf{B}$
 \end_inset
 
- forms a angle 
+ forms an angle 
 \begin_inset Formula $\theta=arctan(\frac{\Omega}{\Delta})$
 \end_inset
 
@@ -383,7 +383,7 @@ key "leek2007observation"
 \end_inset
 
 .
- So the observable phase difference 
+ So the observable phase difference of eigenstates is 
 \begin_inset Formula $\delta=4\pi cos(\theta)$
 \end_inset
 
@@ -616,7 +616,15 @@ on in equation
 
 , which indicate the evolution part of dynamic decoupling sequence, must
  be zero.
- As demonstrated in [], there are two schemes to solve this problem.
+ As demonstrated in Ref.
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "qin2017suppressing"
+
+\end_inset
+
+, there are two schemes to solve this problem.
  Expatiated as bellow:
 \end_layout
 
@@ -697,7 +705,14 @@ We test these two schemes using a trapped
 \end_inset
 
  ion in needle trap with the setup similar to the one described in Ref.
- [].
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "cui2016experimental"
+
+\end_inset
+
+.
  The TLS is structured by two hyperfine leves of the 
 \begin_inset Formula $^{171}Yb^{+}$
 \end_inset
@@ -796,8 +811,8 @@ in the
 \end_layout
 
 \begin_layout Standard
-In our experiment, Berry phase and coherence of the qubit have been measurement
- as function of angle span by the magnetic field 
+In our experiment, Berry phase and coherence of the qubit have been measured
+ as a function of angle spanned by the magnetic field 
 \begin_inset Formula $\textbf{B}$
 \end_inset
 
@@ -837,7 +852,7 @@ In our experiment, Berry phase and coherence of the qubit have been measurement
 \begin_inset Formula $\omega_{0}=12.64GHz$
 \end_inset
 
- will cause different 
+, which will causes different 
 \begin_inset Formula $\theta=arctan\frac{\Omega}{\Delta}$
 \end_inset
 
@@ -895,7 +910,7 @@ In our experiment, Berry phase and coherence of the qubit have been measurement
 
  are dynamic and geometric phase respectively.
  we make 
-\begin_inset Formula $\dot{\varphi}/B==0.1$
+\begin_inset Formula $\dot{\varphi}/B=0.1$
 \end_inset
 
 , which guarantee the adiabatic parameter 
@@ -932,15 +947,11 @@ In our experiment, Berry phase and coherence of the qubit have been measurement
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figure/Fig4.pdf
+	filename Figure/Fig4-9.14.pdf
 	scale 80
 
 \end_inset
@@ -992,7 +1003,7 @@ We generate
  in drive.
  The noise applied to qubit conform an Ornstein-Uhlenbeck(OU) process with
  correlation time 
-\begin_inset Formula $1/\Gamma=10$
+\begin_inset Formula $\tau=10$
 \end_inset
 
  and intensity 
@@ -1024,15 +1035,17 @@ and
 \begin_inset Formula $\Gamma T\ll1$
 \end_inset
 
+, and 
+\begin_inset Formula $\Gamma=\frac{1}{\tau}$
+\end_inset
+
 .
- Besides, we also investigate the dephasing of free induction decay(FID)
- .
  Obviously, SE and CPMG methords only suppress the dephasing effectively
  in much smaller angle 
 \begin_inset Formula $\theta$
 \end_inset
 
- compared to FID.
+.
  When it comes to bigger angle, such as 
 \begin_inset Formula $\theta>\frac{\pi}{4}$
 \end_inset
@@ -1066,11 +1079,7 @@ l expectation in Fig.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1120,7 +1129,7 @@ name "fig: Berry phase "
 In the motivation of realistic application in quantum information processing(QIP
 ), we investigate the performance of these modified methords under different
  parameters 
-\begin_inset Formula $1/\Gamma$
+\begin_inset Formula $\tau$
 \end_inset
 
  and 
@@ -1141,7 +1150,7 @@ In the motivation of realistic application in quantum information processing(QIP
 \end_inset
 
  at the same time we fix parameter 
-\begin_inset Formula $\alpha/\Omega\approx1$
+\begin_inset Formula $\alpha/\Omega^{2}\approx1$
 \end_inset
 
 .
@@ -1158,7 +1167,7 @@ In the motivation of realistic application in quantum information processing(QIP
 
 , dephasing begins to be notable.
  Second, we set 
-\begin_inset Formula $1/\Gamma=0.01$
+\begin_inset Formula $\tau=0.01$
 \end_inset
 
  and change 
@@ -1166,15 +1175,15 @@ In the motivation of realistic application in quantum information processing(QIP
 \end_inset
 
  making the ratio 
-\begin_inset Formula $\frac{\alpha}{\Omega}$
+\begin_inset Formula $\alpha/\Omega^{2}$
 \end_inset
 
  from 
-\begin_inset Formula $1$
+\begin_inset Formula $0.01$
 \end_inset
 
  to 
-\begin_inset Formula $100$
+\begin_inset Formula $10$
 \end_inset
 
 .
@@ -1202,9 +1211,9 @@ In summery, we investigate the dephasing of a TLS under Gaussian noise using
  a single trapped ion, suppress the residual geometric dephasing utilizing
  modified dynamic decoupling sequence without destroying Berry phase.
  The measurement results are in agreement with theoretical simulations.
- In addition, we also discuss effect of these sequence in different parameters
- of noise and make sure, it will reduce interference between quantum systems
- and environment further.
+ In addition, we also discuss effect of these sequence in different intensity
+ and correlation time of noise and make sure, it will reduce interference
+ between quantum systems and environment further.
  Meanwhile it will help precise quantum state manipulation in realistic
  experiments of QIP.
 \end_layout
