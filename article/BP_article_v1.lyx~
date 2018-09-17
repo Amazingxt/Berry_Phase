@@ -1063,6 +1063,60 @@ l expectation in Fig.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Figure/Fig-5.pdf
+	scale 80
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig: Berry phase "
+
+\end_inset
+
+ (color online).
+ Berry phase as a function of angle.
+ Each data point is average of 100 realization of noise.
+ Solid line is the theoretical Berry phase difference 
+\begin_inset Formula $-4\pi cos\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $-2\pi cos\theta_{\alpha}-2\pi cos\theta_{\beta}$
+\end_inset
+
+.
+ (a) Spin echo and CPMG protocols.
+ (b) Modified dynamic decoupling protocols.
+ The error bars indicate the standard deviation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 In the motivation of realistic application in quantum information processing(QIP
 ), we investigate the performance of these modified methords under different
  parameters 
@@ -1141,60 +1195,6 @@ In the motivation of realistic application in quantum information processing(QIP
 \end_inset
 
  are not too large.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename Figure/Fig-5.pdf
-	scale 80
-
-\end_inset
-
-
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig: Berry phase "
-
-\end_inset
-
- (color online).
- Berry phase as a function of angle.
- Each data point is average of 100 realization of noise.
- Solid line is the theoretical Berry phase difference 
-\begin_inset Formula $-4\pi cos\theta$
-\end_inset
-
- and 
-\begin_inset Formula $-2\pi cos\theta_{\alpha}-2\pi cos\theta_{\beta}$
-\end_inset
-
-.
- (a) Spin echo and CPMG protocols.
- (b) Modified dynamic decoupling protocols.
- The error bars indicate the standard deviation.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard

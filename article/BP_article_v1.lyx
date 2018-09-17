@@ -932,15 +932,11 @@ In our experiment, Berry phase and coherence of the qubit have been measurement
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename Figure/Fig4.pdf
+	filename Figure/Fig4-9.14.pdf
 	scale 80
 
 \end_inset
@@ -1066,11 +1062,7 @@ l expectation in Fig.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
