@@ -77,19 +77,24 @@
 \end_layout
 
 \begin_layout Title
-Experimentally suppress residual geometric dephasing use a single trapped
+Experimentally suppress residual geometric dephasing using a single trapped
  ion
 \end_layout
 
 \begin_layout Abstract
-Geometric phase also known as Berry phase, is regarded as a pential strategy
- in fault tolerance quantum information processing(QIP) due to it's geometric
+Geometric phase also known as Berry phase, is regarded as a potential strategy
+ in fault tolerance quantum information processing(QIP) due to it's topological
  nature.
+ However, decoherence due to existence of environmental noise will destory
+ the geometric phase.
  Traditional dynamic decoupling sequence can eliminate dynamic dephasing
  while residual geometric dephasing is still import for high-precision quantum
- manipulation bathed in environmental noise .
+ manipulation.
  Following the schemes in Ref.
- 
+\begin_inset space \space{}
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "qin2017suppressing"
@@ -97,13 +102,13 @@ key "qin2017suppressing"
 \end_inset
 
 , we experimentally demonstrate using a single trapped 
-\begin_inset Formula $^{171}Yb^{+}$
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
 \end_inset
 
- ion that these modified dynamic decouping sequences suppress residual geometric
- dephasing effectively.
+ ion that these modified dynamic decoupling sequences suppress residual
+ geometric dephasing effectively.
  Besides, we also investigate the impact of intensity and correlation time
- of the low-frequence noise on coherence.
+ of the low-frequency noise on coherence.
  And we confirm the domain of validity of these methods.
  
 \end_layout
@@ -116,7 +121,7 @@ key "berry1984quantal"
 
 \end_inset
 
- associated with adiabatic and circular evalution in Hilbert parameter space
+ associated with adiabatic and circular evolution in Hilbert parameter space
  plays a fundamental role in a broad range of physics application, including
  but not limited to precision measurement
 \begin_inset CommandInset citation
@@ -200,8 +205,8 @@ key "leibfried2003experimental"
 \end_layout
 
 \begin_layout Standard
-Dephasing arises in quantum systum when the interaction between system and
- environment causes randomizaiton of its quantum phase in a process
+Dephasing arises in quantum system when the interaction between system and
+ environment causes randomization of its quantum phase in a process
 \begin_inset CommandInset citation
 LatexCommand citep
 key "arai2018geometric"
@@ -211,7 +216,7 @@ key "arai2018geometric"
 .
  Part of this dephasing is dynamic dephasing while part of this is of geometric
  origin.
- Although dynamic dephasing can be supressed throuth spin echo methods
+ Although dynamic dephasing can be suppressed through spin echo methods
 \begin_inset CommandInset citation
 LatexCommand citep
 key "jones2000geometric"
@@ -239,7 +244,10 @@ key "whitney2005geometric,berger2013exploring,berger2015measurement"
 .
  New schemes was proposed to suppress the residual geometric dephasing in
  Ref.
- 
+\begin_inset space \space{}
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "qin2017suppressing"
@@ -284,15 +292,11 @@ Consider a TLS exposed to a slowly varying magnetic field, the Hamiltonian
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H_{1}=\frac{1}{2}(\Delta\sigma_{z}+\Omega sin(\varphi)\sigma_{x}+\Omega cos(\varphi)\sigma_{y})=\frac{1}{2}\textbf{\textbf{B}}\cdot\bm{\sigma}
+H_{1}=\frac{1}{2}(\Delta\sigma_{z}+\Omega\sin(\varphi)\sigma_{x}+\Omega\cos(\varphi)\sigma_{y})=\frac{1}{2}\textbf{\textbf{B}}\cdot\bm{\sigma},\label{eq:1}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Where 
 \begin_inset Formula $\Delta=\omega_{0}-\omega_{mw}$
 \end_inset
@@ -306,7 +310,7 @@ Where
 \end_inset
 
 ), 
-\begin_inset Formula $\bm{\sigma}=(\sigma_{x},\sigma_{y},\sigma_{z})$
+\begin_inset Formula $\bm{\sigma}=(\sigma_{x},\,\sigma_{y},\,\sigma_{z})$
 \end_inset
 
  is the Pauli matrices, 
@@ -319,7 +323,7 @@ Where
 
  are the intensity and phase of drive respectively.
  
-\begin_inset Formula $\textbf{B}=(sin(\varphi),cos(\varphi),\Delta)$
+\begin_inset Formula $\textbf{B}=(\sin(\varphi),\,\cos(\varphi),\,\Delta)$
 \end_inset
 
  can be regarded as the magnetic field applied to TLS.
@@ -328,7 +332,7 @@ Where
 \end_inset
 
  forms an angle 
-\begin_inset Formula $\theta=arctan(\frac{\Omega}{\Delta})$
+\begin_inset Formula $\theta=\arctan(\frac{\Omega}{\Delta})$
 \end_inset
 
  with the 
@@ -342,25 +346,35 @@ Where
 \end_inset
 
  as shown in Fig.
- 1(a).
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Berry phase in qubit "
+
+\end_inset
+
+(a).
  If the 
 \begin_inset Formula $\dot{\varphi}$
 \end_inset
 
- is small enough, usually satisfy the requirement that the adiabaticity
- parameter 
-\begin_inset Formula $A=\dot{\varphi}sin\theta/2B\ll1$
-\end_inset
-
-
-\begin_inset CommandInset citation
-LatexCommand citep
-key "leek2007observation"
-
+ is small enough, usually satisfy the requirement that the adiabatic parameter
+ 
+\begin_inset Formula $A=\dot{\varphi}\sin\theta/2B\ll1$
 \end_inset
 
  for the case of constant angle 
 \begin_inset Formula $\theta$
+\end_inset
+
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "leek2007observation"
+
 \end_inset
 
 , dynamical phase and geometric phase will be accumulated in the duration
@@ -368,13 +382,23 @@ key "leek2007observation"
  In order to observe the pure Berry phase, ones usually take advantage of
  the spin echo(SE) technique to eliminate the part of dynamic phase as shown
  in Fig.
- 1(b).
- Supposeing in an spin echo sequence, the magnetic field rounds 
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Berry phase in qubit "
+
+\end_inset
+
+(b).
+ Supposing in an spin echo sequence, the magnetic field rounds 
 \begin_inset Formula $n$
 \end_inset
 
  loops in half of the sequence and enclosed a solid angle 
-\begin_inset Formula $\Theta=2n\pi(1-cos(\theta))$
+\begin_inset Formula $\Theta=2n\pi(1-\cos(\theta))$
 \end_inset
 
 , which equals to the geometric phase acquire by eigenstate of Hamiltonian
@@ -384,7 +408,7 @@ key "leek2007observation"
 
 .
  So the observable phase difference of eigenstates is 
-\begin_inset Formula $\delta=4\pi cos(\theta)$
+\begin_inset Formula $\delta=4\pi\cos(\theta)$
 \end_inset
 
 .
@@ -421,7 +445,7 @@ name "fig:Berry phase in qubit "
 \end_inset
 
  adiabaticly with angle 
-\begin_inset Formula $\theta=arctan(\frac{\Omega}{\Delta})$
+\begin_inset Formula $\theta=\arctan(\frac{\Omega}{\Delta})$
 \end_inset
 
  from 
@@ -451,9 +475,9 @@ name "fig:Berry phase in qubit "
 \end_layout
 
 \begin_layout Standard
-Now let's conside the Hamiltonian under classical fluctuating field.
+Now let's consider the Hamiltonian under classical fluctuating field.
  We follow the assumption 
-\begin_inset Formula $\textbf{K}(t)=(0,0,K_{3})$
+\begin_inset Formula $\textbf{K}(t)=(0,\,0,\,K_{3})$
 \end_inset
 
 , for the reason that decoherence is meanly from destabilization of magnetic,
@@ -467,15 +491,12 @@ Now let's conside the Hamiltonian under classical fluctuating field.
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-H_{2}=\frac{1}{2}((\Delta+K_{3})\sigma_{z}+\Omega sin(\varphi)\sigma_{x}+\Omega cos(\varphi)\sigma_{y})
+H_{2}=\frac{1}{2}((\Delta+K_{3})\sigma_{z}+\Omega\sin(\varphi)\sigma_{x}+\Omega\cos(\varphi)\sigma_{y}),
 \end{equation}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula $K_{3}$
 \end_inset
 
@@ -494,32 +515,21 @@ H_{2}=\frac{1}{2}((\Delta+K_{3})\sigma_{z}+\Omega sin(\varphi)\sigma_{x}+\Omega 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-W=\langle e^{i\phi}\rangle=e^{-\langle\phi^{2}\rangle}
+W=\langle e^{i\phi}\rangle=e^{-\langle\phi^{2}\rangle},
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-, in which 
-\end_layout
-
-\begin_layout Standard
+in which 
 \begin_inset Formula 
 \begin{equation}
-\phi=-\sum_{k=1}^{n}\int_{T_{k-1}}^{T_{k}}s_{k}(cos\theta-\dot{\varphi}sin^{2}\theta/B)K_{3}(t)dt
+\phi=-\sum_{k=1}^{n}\int_{T_{k-1}}^{T_{k}}s_{k}(\cos\theta-\dot{\varphi}\sin\theta/B)K_{3}(t)dt,\label{eq:phi_K3}
 \end{equation}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 where 
-\begin_inset Formula $(T_{k-1},T_{k})$
+\begin_inset Formula $(T_{k-1},\,T_{k})$
 \end_inset
 
  is the time segment cut apart by the spin echo sequence, 
@@ -542,11 +552,11 @@ th time interval.
 
  does not equal to zero.
  The term 
-\begin_inset Formula $s_{k}cos\theta$
+\begin_inset Formula $s_{k}\cos\theta$
 \end_inset
 
  give raise to the dynamic dephasing while the second term 
-\begin_inset Formula $-s_{k}\dot{\varphi}sin^{2}\theta/B$
+\begin_inset Formula $-s_{k}\dot{\varphi}\sin\theta/B$
 \end_inset
 
  induces the geometric dephasing.
@@ -558,10 +568,6 @@ th time interval.
 wide false
 sideways false
 status open
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -599,10 +605,6 @@ name "fig:Trajectory of Bloch vector in schemes"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -610,14 +612,21 @@ name "fig:Trajectory of Bloch vector in schemes"
 
 \begin_layout Standard
 In order to eliminate both dynamic and geometric dephasing, the sum of integrati
-on in equation 
-\begin_inset Formula $(4)$
+on in Equ.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:phi_K3"
+
 \end_inset
 
 , which indicate the evolution part of dynamic decoupling sequence, must
  be zero.
  As demonstrated in Ref.
- 
+\begin_inset space \space{}
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "qin2017suppressing"
@@ -637,14 +646,34 @@ key "qin2017suppressing"
 \end_inset
 
  in neighboring adiabatic paths as shown in Fig.
- 2(a)(spin echo sequence) and Fig.
- 2(b)(CPMG sequence).
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Trajectory of Bloch vector in schemes"
+
+\end_inset
+
+(a) (spin echo sequence) and Fig.
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Trajectory of Bloch vector in schemes"
+
+\end_inset
+
+(b) (CPMG sequence).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\phi=(cos\theta_{a}-\frac{\dot{\varphi}_{+}sin^{2}\theta_{a}}{B})+(-cos\theta_{c}+\frac{\dot{\varphi}_{-}sin^{2}\theta_{c}}{B})=0
+\phi=(\cos\theta_{a}-\frac{\dot{\varphi}_{+}\sin\theta_{a}}{B})+(-\cos\theta_{c}+\frac{\dot{\varphi}_{-}\sin\theta_{c}}{B})=0
 \end{equation}
 
 \end_inset
@@ -658,32 +687,28 @@ key "qin2017suppressing"
 
  Separate two adiabatic paths of spin echo sequence into four parts as shown
  in Fig.
- 2(c).
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Trajectory of Bloch vector in schemes"
+
+\end_inset
+
+(c).
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-\phi=(cos\theta-\frac{\dot{\varphi}_{+}sin^{2}\theta}{B})+(-cos\theta-\frac{\dot{\varphi}_{-}sin^{2}\theta}{B})+
-\]
+\begin{align}
+\phi= & (\cos\theta-\frac{\dot{\varphi}_{+}\sin\theta}{B})+(-\cos\theta-\frac{\dot{\varphi}_{-}\sin\theta}{B})+\nonumber \\
+ & (-\cos\theta+\frac{\dot{\varphi}_{+}\sin\theta}{B})+(\cos\theta+\frac{\dot{\varphi}_{-}\sin\theta}{B})=0\label{eq:phi}
+\end{align}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-(-cos\theta+\frac{\dot{\varphi}_{+}sin^{2}\theta}{B})+(cos\theta+\frac{\dot{\varphi}_{-}sin^{2}\theta}{B})=0
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 in which 
 \begin_inset Formula $\dot{\varphi}_{+}$
 \end_inset
@@ -701,11 +726,14 @@ indicate the procession orientation of magnetic is clockwise while
 
 \begin_layout Standard
 We test these two schemes using a trapped 
-\begin_inset Formula $^{171}Yb^{+}$
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
 \end_inset
 
  ion in needle trap with the setup similar to the one described in Ref.
- 
+\begin_inset space \space{}
+\end_inset
+
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "cui2016experimental"
@@ -713,8 +741,8 @@ key "cui2016experimental"
 \end_inset
 
 .
- The TLS is structured by two hyperfine leves of the 
-\begin_inset Formula $^{171}Yb^{+}$
+ The TLS is structured by two hyperfine levels of the 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
 \end_inset
 
  ion in the 
@@ -722,15 +750,25 @@ key "cui2016experimental"
 \end_inset
 
  ground-state, with 
-\begin_inset Formula $|0\rangle=|F=0\rangle$
+\begin_inset Formula $\left|0\right\rangle =\left|F=0\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $|1\rangle=|F=1,m_{F}=0\rangle$
+\begin_inset Formula $\left|1\right\rangle =\left|F=1,\ m_{F}=0\right\rangle $
 \end_inset
 
-, as shwon in Fig.
- 3.
+, as shown in Fig.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Energy level diagram of Yb ion "
+
+\end_inset
+
+.
  
 \end_layout
 
@@ -758,50 +796,50 @@ name "fig:Energy level diagram of Yb ion "
 \end_inset
 
  (color online).
- Energy level diagram of Yb ion.
- Qubit state 
-\begin_inset Formula $|0\rangle$
+ Energy levels diagram of 
+\begin_inset Formula $^{171}\mathrm{Yb}^{+}$
 \end_inset
 
-,
-\begin_inset Formula $|1\rangle$
+ ion.
+ Qubit state 
+\begin_inset Formula $\left|0\right\rangle $
+\end_inset
+
+, 
+\begin_inset Formula $\left|1\right\rangle $
 \end_inset
 
  are mapped onto 
-\begin_inset Formula $|F=1,m_{F}=0\rangle$
+\begin_inset Formula $\left|F=1,\,m_{F}=0\right\rangle $
 \end_inset
 
-,
-\begin_inset Formula $|F=0,m_{F}=0\rangle$
+, 
+\begin_inset Formula $\left|F=0,\,m_{F}=0\right\rangle $
 \end_inset
 
-in the 
+ in the 
 \begin_inset Formula $S_{1/2}$
 \end_inset
 
  ground state manifold, respectively.
  The transition frequency between 
-\begin_inset Formula $|0\rangle$
+\begin_inset Formula $\left|0\right\rangle $
 \end_inset
 
  and 
-\begin_inset Formula $|1\rangle$
+\begin_inset Formula $\left|1\right\rangle $
 \end_inset
 
  is 
-\begin_inset Formula $(2\pi)12.642824GHz$
+\begin_inset Formula $(2\pi)12.642824$
 \end_inset
 
-.
+ GHz.
  
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -822,17 +860,41 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 
  axis.
  Using a spin echo pulse sequence, in which dynamic phase will be offset
- by opposite loop direction of neighboring adiabatic evalution, we can measure
- pure Berry's phase.
- The experiment takes the following process: after 1ms doppler cooling,
+ by opposite loop direction of neighboring adiabatic evaluation, we can
+ measure pure Berry's phase.
+ The experiment takes the following process: after 1 ms Doppler cooling,
  the state of the ion is initialized to 
-\begin_inset Formula $|0\rangle$
+\begin_inset Formula $\left|0\right\rangle $
 \end_inset
 
  by 20
-\begin_inset Formula $\mu s$
+\begin_inset Formula $\mu$
 \end_inset
 
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+s
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
  standard optical pumping.
  Then a series of coherent manipulations will be bring to the ion using
  a bunch microwave 
@@ -844,16 +906,16 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 \begin_inset Formula $\theta$
 \end_inset
 
-,we vary 
+, we vary 
 \begin_inset Formula $\omega_{mw}$
 \end_inset
 
- around qubit transtion frequency 
-\begin_inset Formula $\omega_{0}=12.64GHz$
+ around qubit transition frequency 
+\begin_inset Formula $\omega_{0}=12.64$
 \end_inset
 
-, which will causes different 
-\begin_inset Formula $\theta=arctan\frac{\Omega}{\Delta}$
+ GHz, which will causes different 
+\begin_inset Formula $\theta=\arctan\frac{\Omega}{\Delta}$
 \end_inset
 
 .
@@ -862,14 +924,18 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 \end_inset
 
  time for Rabi oscillation is adjusted to 
-\begin_inset Formula $95\mu s$
+\begin_inset Formula $95$
 \end_inset
 
-, that is, the Rabi frequency 
-\begin_inset Formula $\Omega=10.5kHz$
+ 
+\begin_inset Formula $\mu$
 \end_inset
 
-.
+s, that is, the Rabi frequency 
+\begin_inset Formula $\Omega=10.5$
+\end_inset
+
+ kHz.
  The complete sequence start by preparing the 
 \begin_inset Formula $\sigma_{z}$
 \end_inset
@@ -888,7 +954,7 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 \end_inset
 
 , the phase of mircowave slowly, causing one of the eigenstate 
-\begin_inset Formula $|+\rangle$
+\begin_inset Formula $\left|+\right\rangle $
 \end_inset
 
  of 
@@ -914,7 +980,7 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 \end_inset
 
 , which guarantee the adiabatic parameter 
-\begin_inset Formula $A=0.05sin\theta\ll1$
+\begin_inset Formula $A=0.05\sin\theta\ll1$
 \end_inset
 
 .
@@ -923,10 +989,13 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 \end_inset
 
  pulse then swap the eigenstate of Hamiltonian in 
-\begin_inset Formula $(1)$
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:1"
+
 \end_inset
 
-, after which the magnetic tracing along opposite direction causing the
+, after which the magnetic tracing along opposite direction, causing the
  same eigenstate of 
 \begin_inset Formula $H_{1}$
 \end_inset
@@ -936,8 +1005,8 @@ In our experiment, Berry phase and coherence of the qubit have been measured
 \end_inset
 
 .
- Finally the pure geometric phase difference between engenstates is 
-\begin_inset Formula $\delta=\gamma_{+}-\gamma_{-}=-4\pi cos\theta$
+ Finally the pure geometric phase difference between eigenstates is 
+\begin_inset Formula $\delta=\gamma_{+}-\gamma_{-}=-4\pi\cos\theta$
 \end_inset
 
 .
@@ -967,22 +1036,26 @@ name "fig: Coherence of the qubit"
 \end_inset
 
  (color online).
- Measured coherences as a function of angle with fluctuations in the effective
+ Measured coherence as a function of angle with fluctuations in the effective
  magnetic field.
  Each data point is average of 100 realizations of noise.
  Solid lines indicate fits to the simulation data.
  (a) Coherence measured in spin echo and CPMG protocols with noise during
  the whole process.
- (b) Coherence measurement in modified dynamic decoupling protocols.
+ (b) Coherence measured in modified dynamic decoupling protocols.
  The error bars indicate the standard deviation.
+ (c) Coherence measured in modified decoupling protocols with fixed intensity
+ 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ (d) Coherence measured in modified decoupling protocols with fixed correlation
+ time.
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -1021,17 +1094,27 @@ We generate
 
  by state tomography.
  That is to say, 
-\begin_inset Formula $\delta=arg\langle\rho_{-1,1}(T)\rangle$
+\begin_inset Formula $\delta={\rm arg}\left\langle \rho_{-1,1}(T)\right\rangle $
 \end_inset
 
 and 
-\begin_inset Formula $W=|\langle\rho_{-1,1}(T)\rangle|/|\rho_{-1,1}(0)|$
+\begin_inset Formula $W=\left|\left\langle \rho_{-1,1}(T)\right\rangle \right|/\left|\rho_{-1,1}(0)\right|$
 \end_inset
 
 .
  In Fig.
- 4(a), we measure the dephasing of spin echo and CPMG sequence in the case
- of low-frequence noise 
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Coherence of the qubit"
+
+\end_inset
+
+(a), we measure the dephasing of spin echo and CPMG sequence in the case
+ of low-frequency noise 
 \begin_inset Formula $\Gamma T\ll1$
 \end_inset
 
@@ -1040,7 +1123,7 @@ and
 \end_inset
 
 .
- Obviously, SE and CPMG methords only suppress the dephasing effectively
+ Obviously, SE and CPMG methods only suppress the dephasing effectively
  in much smaller angle 
 \begin_inset Formula $\theta$
 \end_inset
@@ -1050,8 +1133,8 @@ and
 \begin_inset Formula $\theta>\frac{\pi}{4}$
 \end_inset
 
-, these two methords don't take effect.
- It can be understanded easily because the ratio 
+, these two methods don't take effect.
+ It can be understand easily because the ratio 
 \begin_inset Formula $K_{3}/\Delta$
 \end_inset
 
@@ -1061,10 +1144,30 @@ and
 
 .
  In order to suppress the residual geometric dephasing, we modify the SE
- and CPMG sequence according to methords exhibited in Fig.
- 2.
+ and CPMG sequence according to methods exhibited in Fig.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Trajectory of Bloch vector in schemes"
+
+\end_inset
+
+.
  The result is shown in Fig.
- 4(b), in which meliorative dynamic decounpling sequence supress residual
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Coherence of the qubit"
+
+\end_inset
+
+(b), in which meliorative dynamic decoupling sequence suppress residual
  dephasing successfully even in large angle 
 \begin_inset Formula $\theta$
 \end_inset
@@ -1072,7 +1175,21 @@ and
 .
  Meanwhile, Berry phase acquired by all these schemes agree well with theoretica
 l expectation in Fig.
- 5(a) and 5(b).
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Berry phase "
+
+\end_inset
+
+(a) and 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Berry phase "
+
+\end_inset
+
+(b).
 \end_layout
 
 \begin_layout Standard
@@ -1102,11 +1219,11 @@ name "fig: Berry phase "
  Berry phase as a function of angle.
  Each data point is average of 100 realization of noise.
  Solid line is the theoretical Berry phase difference 
-\begin_inset Formula $-4\pi cos\theta$
+\begin_inset Formula $-4\pi\cos\theta$
 \end_inset
 
  and 
-\begin_inset Formula $-2\pi cos\theta_{\alpha}-2\pi cos\theta_{\beta}$
+\begin_inset Formula $-2\pi\cos\theta_{\alpha}-2\pi\cos\theta_{\beta}$
 \end_inset
 
 .
@@ -1127,7 +1244,7 @@ name "fig: Berry phase "
 
 \begin_layout Standard
 In the motivation of realistic application in quantum information processing(QIP
-), we investigate the performance of these modified methords under different
+), we investigate the performance of these modified methods under different
  parameters 
 \begin_inset Formula $\tau$
 \end_inset
@@ -1155,7 +1272,17 @@ In the motivation of realistic application in quantum information processing(QIP
 
 .
  As shown in Fig.
- 4(c), these methords become out of work along with increasing correlation
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Coherence of the qubit"
+
+\end_inset
+
+(c), these methods become out of work along with increasing correlation
  time 
 \begin_inset Formula $1/\Gamma$
 \end_inset
@@ -1188,11 +1315,21 @@ In the motivation of realistic application in quantum information processing(QIP
 
 .
  In Fig.
- 4(d), the more the ratio 
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig: Coherence of the qubit"
+
+\end_inset
+
+(d), the more the ratio 
 \begin_inset Formula $\frac{\alpha}{\Omega}$
 \end_inset
 
- is, the worse the effect of these methords will be.
+ is, the worse the effect of these methods will be.
  As a result, we can only suppress the dephasing of qubit bathed in Gaussian
  noise with the ameliorative dynamic decoupling sequence if the parameters
  
